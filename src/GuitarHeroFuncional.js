@@ -110,7 +110,7 @@ const GuitarHero = () => {
 
         {/* Apply the cube texture as background */}
         <ambientLight intensity={0.3} />
-        <primitive object={envMap} attach="background" />
+        <primitive map={envMap} attach="background" />
 
         {notes.map((note) => (
           <Note key={note.id} lane={note.lane} onHit={() => {}} />
